@@ -51,10 +51,10 @@ while True:
             print("right button pressed")
             MoveMotor(rightWheelMotor, currentSpeed, 0)
     if reverseButton.pressed():
-        if buttontoggle:
-        currentSpeed = 500
-        buttontoggle = false
+        if buttonToggle == True:
+            currentSpeed = 500
+            buttonToggle = False
         else:
-        currentSpeed = -500
-        buttontoggle = true
+            currentSpeed = -500
+            buttonToggle = True
 
